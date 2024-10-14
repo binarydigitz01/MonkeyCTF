@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>title?</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div id="content">
+            <h1>Nonsensical letters</h1>
+            <p> The MONKEYS stole the javascript code to decrypt the following keys, can you find them and get the secret message? </p>
+            <div id="secret_message">
+            </div>
+            <button id="decrypt_button">Decrypt</button>
+        </div>
+        <script src="openpgp.min.js"></script>
+        <script>
+         let secret_message = document.getElementById("secret_message");
+         secret_message.innerText = `
+                -----BEGIN PGP MESSAGE-----
+
+                hF4D0418/B6fWekSAQdAGFaV6KR7u1XArA3NN7Npa+NwEwlKz1VvhpsUE5JWy1sw
+                AkVAmxMsFlcYHkWvQ3XRwb5ETvEX2RWysCrIH9/+QA1VJr+B+Q+SuUqzloR/9Tx1
+                1LIBCQIQN9Gofsi5RN8kdWqDGm4n5KZQ3B6LpncQ5FnLMHdJscR/6d4TT1lGGIgb
+                sqjBKOf3vhfZr9TxwdACbAtahchpNDyN0N+H5fgIx86bH/rK4h7qxCnq5KFFRZF+
+                q2NSjZ4uVtQ3gybFIIXCQafeCBe3qe9PFE40kRyMYJ2vtm6RUtr2aQSq5k9wjtGy
+                8eZK4HcTqhJaxTbsGtrvqDaTQbb+7SDG5KjohE/IZQ+EJVcB
+                =ZT91
+                -----END PGP MESSAGE-----
+         `;
+
+        </script>
+    </body>
+</html>

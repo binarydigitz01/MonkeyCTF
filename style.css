@@ -1,0 +1,13 @@
+div #content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+p {
+    color: #eaf2ef;
+}
+
+body {
+    background-color: #222524
+}
